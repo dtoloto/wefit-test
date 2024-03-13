@@ -28,7 +28,6 @@ natureCard.classList.add('order-1');
 // STYLING LIST
 const list = document.querySelector('ul');
 const firstItem = document.querySelector('ul li');
-console.log(firstItem)
 firstItem.classList.remove('active')
 
 const fourthItem = document.createElement('li');
@@ -41,5 +40,11 @@ const fifthItem = document.createElement('li');
 fifthItem.classList.add('list-group-item');
 fifthItem.textContent = 'Quinto Item';
 list.appendChild(fifthItem);
+
+
+// STYLING MENU
+const menu = document.querySelector('[role="group"]')
+menu.classList.remove('btn-group-vertical')
+
 
 

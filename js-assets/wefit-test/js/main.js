@@ -24,3 +24,22 @@ peopleCard.classList.add('order-3');
  
 const natureCard = document.querySelector("#nature-card")
 natureCard.classList.add('order-1');
+
+// STYLING LIST
+const list = document.querySelector('ul');
+const firstItem = document.querySelector('ul li');
+console.log(firstItem)
+firstItem.classList.remove('active')
+
+const fourthItem = document.createElement('li');
+fourthItem.classList.add('active');
+fourthItem.classList.add('list-group-item');
+fourthItem.textContent = 'Quarto Item';
+list.appendChild(fourthItem);
+
+const fifthItem = document.createElement('li');
+fifthItem.classList.add('list-group-item');
+fifthItem.textContent = 'Quinto Item';
+list.appendChild(fifthItem);
+
+
